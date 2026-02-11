@@ -20,104 +20,95 @@
         .hero-gradient {
             background: linear-gradient(135deg, #2D3E94 0%, #1a255e 100%);
         }
-        .form-shadow {
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Header -->
-    <header class="bg-white border-b-4 border-gdm-gold sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <!-- LOGO: Substitua 'logo.png' pelo caminho da sua imagem -->
-                <img src="logo.png" alt="G.D.M. Logo" class="h-16 w-auto" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block'">
+    <!-- Header Centralizado -->
+    <header class="bg-white border-b-4 border-gdm-gold sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <!-- LOGO CENTRALIZADA -->
+            <div class="mb-4">
+                <img src="logo.png" alt="G.D.M. Logo" class="h-20 w-auto mx-auto" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block'">
                 
-                <!-- Fallback caso a imagem não exista -->
-                <div id="logo-fallback" class="hidden">
-                    <span class="text-gdm-blue font-black text-2xl tracking-tighter leading-none">G.D.M.</span>
-                    <div class="text-[10px] font-bold text-slate-500 tracking-widest uppercase">Guardiã dos Montes</div>
+                <div id="logo-fallback" class="hidden text-center">
+                    <span class="text-gdm-blue font-black text-3xl tracking-tighter leading-none">G.D.M.</span>
+                    <div class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase">Guardiã dos Montes</div>
                 </div>
             </div>
-            <nav class="hidden md:flex gap-8 font-bold text-sm uppercase tracking-widest">
-                <a href="#inicio" class="text-gdm-blue hover:text-blue-500 transition">Início</a>
-                <a href="#sobre" class="text-gdm-blue hover:text-blue-500 transition">O Projeto</a>
-                <a href="#formulario" class="bg-gdm-blue text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition">Sugerir Local</a>
+
+            <!-- Navegação Centralizada -->
+            <nav class="flex gap-6 sm:gap-10 font-bold text-[10px] sm:text-xs uppercase tracking-[0.2em]">
+                <a href="#inicio" class="text-gdm-blue hover:text-blue-500 transition border-b-2 border-transparent hover:border-gdm-gold">Início</a>
+                <a href="#sobre" class="text-gdm-blue hover:text-blue-500 transition border-b-2 border-transparent hover:border-gdm-gold">O Projeto</a>
+                <a href="#formulario" class="text-gdm-blue hover:text-blue-500 transition border-b-2 border-transparent hover:border-gdm-gold font-black">Sugerir Local</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero-gradient text-white py-20 px-4">
+    <section id="inicio" class="hero-gradient text-white py-24 px-4">
         <div class="max-w-5xl mx-auto text-center">
             <div class="inline-block bg-gdm-gold text-gdm-blue font-black px-4 py-1 rounded mb-6 text-sm tracking-widest uppercase">
                 Segurança Inteligente
             </div>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                Ajude a G.D.M. a vigiar o que é <span class="text-gdm-gold">nosso.</span>
+            <!-- FRASE ALTERADA CONFORME SOLICITADO -->
+            <h1 class="text-4xl md:text-6xl font-black mb-8 leading-tight">
+                Vamos vigiar o que é <span class="text-gdm-gold">nosso.</span>
             </h1>
-            <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
                 O projeto <strong>Guardiã dos Montes</strong> utiliza tecnologia de ponta para proteger nossa comunidade. Indique locais estratégicos para novas câmeras.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#formulario" class="bg-gdm-gold text-gdm-blue px-10 py-4 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-lg">
-                    ENVIAR SUGESTÃO
-                </a>
-            </div>
+            <a href="#formulario" class="inline-block bg-gdm-gold text-gdm-blue px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">
+                ENVIAR SUGESTÃO
+            </a>
         </div>
     </section>
 
     <!-- Info Cards -->
-    <section id="sobre" class="py-16 px-4">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-gdm-blue transition hover:shadow-md">
-                <div class="text-gdm-blue mb-4">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+    <section id="sobre" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-10 rounded-3xl shadow-sm border-t-4 border-gdm-blue text-center">
+                <div class="text-gdm-blue mb-6 flex justify-center">
+                    <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                 </div>
-                <h3 class="text-xl font-black text-gdm-blue mb-3 uppercase">Olhar Atento</h3>
-                <p class="text-slate-600">Nossa central opera 24h por dia, focada na prevenção de delitos e resposta rápida.</p>
+                <h3 class="text-xl font-black text-gdm-blue mb-4 uppercase tracking-tight">Olhar Atento</h3>
+                <p class="text-slate-600 leading-relaxed">Nossa central opera 24h por dia, focada na prevenção de delitos e resposta rápida.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-gdm-gold transition hover:shadow-md">
-                <div class="text-gdm-gold mb-4">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <div class="bg-white p-10 rounded-3xl shadow-sm border-t-4 border-gdm-gold text-center">
+                <div class="text-gdm-gold mb-6 flex justify-center">
+                    <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                 </div>
-                <h3 class="text-xl font-black text-gdm-blue mb-3 uppercase">Pontos Chave</h3>
-                <p class="text-slate-600">Sua indicação ajuda a cobrir "pontos cegos" em rotas de fuga e áreas comerciais.</p>
+                <h3 class="text-xl font-black text-gdm-blue mb-4 uppercase tracking-tight">Pontos Chave</h3>
+                <p class="text-slate-600 leading-relaxed">Sua indicação ajuda a cobrir "pontos cegos" em rotas de fuga e áreas comerciais.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-gdm-blue transition hover:shadow-md">
-                <div class="text-gdm-blue mb-4">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04 Pelotas 12.022 12.022 0 003.483 8.72l4.87 4.87a2 2 0 002.817 0l4.87-4.87c.356-.362.682-.744.977-1.146.521-.714.896-1.53 1.108-2.409a12.022 12.022 0 00-1.93-9.726z"/></svg>
+            <div class="bg-white p-10 rounded-3xl shadow-sm border-t-4 border-gdm-blue text-center">
+                <div class="text-gdm-blue mb-6 flex justify-center">
+                    <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04 Pelotas 12.022 12.022 0 003.483 8.72l4.87 4.87a2 2 0 002.817 0l4.87-4.87c.356-.362.682-.744.977-1.146.521-.714.896-1.53 1.108-2.409a12.022 12.022 0 00-1.93-9.726z"/></svg>
                 </div>
-                <h3 class="text-xl font-black text-gdm-blue mb-3 uppercase">Comunidade Unida</h3>
-                <p class="text-slate-600">A segurança colaborativa é a ferramenta mais forte contra a criminalidade.</p>
+                <h3 class="text-xl font-black text-gdm-blue mb-4 uppercase tracking-tight">União Forte</h3>
+                <p class="text-slate-600 leading-relaxed">A segurança colaborativa é a ferramenta mais eficiente contra a criminalidade.</p>
             </div>
         </div>
     </section>
 
-    <!-- Google Form Section -->
+    <!-- Formulário -->
     <section id="formulario" class="py-12 px-4 bg-slate-100">
         <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-                <div class="bg-gdm-blue py-6 px-8 text-white flex items-center justify-between">
-                    <div>
-                        <h2 class="text-2xl font-black uppercase tracking-tight">Formulário de Sugestão</h2>
-                        <p class="text-blue-200 text-sm">Preencha com o máximo de detalhes.</p>
-                    </div>
-                    <img src="logo.png" alt="" class="h-12 opacity-50 grayscale brightness-200">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200">
+                <div class="bg-gdm-blue py-8 px-8 text-white text-center">
+                    <h2 class="text-3xl font-black uppercase tracking-tighter">Formulário de Sugestão</h2>
+                    <p class="text-blue-200 mt-2">Colabore com a segurança da sua região.</p>
                 </div>
                 
-                <!-- Iframe do Formulário -->
                 <div class="relative" style="height: 1000px;">
                     <iframe 
                         src="https://docs.google.com/forms/d/e/1FAIpQLSfXdSg1lOzhgtcby61zXL9o3ZndleOf7OZ8uRAINYn59U4H4g/viewform?embedded=true" 
                         width="100%" 
                         height="100%" 
                         frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0"
                         class="absolute inset-0">
                         Carregando…
                     </iframe>
@@ -126,24 +117,23 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gdm-blue text-white py-12 px-4 border-t-8 border-gdm-gold">
+    <!-- Footer Centralizado -->
+    <footer class="bg-slate-900 text-white py-16 px-4 border-t-8 border-gdm-gold">
         <div class="max-w-7xl mx-auto text-center">
-            <div class="flex flex-col items-center gap-4 mb-8">
-                <img src="logo.png" alt="G.D.M." class="h-20 w-auto opacity-90">
-                <div class="h-1 w-20 bg-gdm-gold"></div>
+            <div class="flex flex-col items-center gap-6 mb-10">
+                <img src="logo.png" alt="G.D.M." class="h-24 w-auto opacity-100">
+                <div class="h-1 w-24 bg-gdm-gold"></div>
             </div>
-            <p class="text-blue-200 text-sm max-w-md mx-auto mb-6 italic">
+            <p class="text-slate-400 text-sm max-w-md mx-auto mb-10 italic">
                 "Vigilância constante para a tranquilidade de quem constrói o futuro."
             </p>
-            <p class="text-xs text-blue-300 uppercase tracking-[0.3em]">
-                © 2024 G.D.M. Guardiã dos Montes - Todos os direitos reservados.
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.4em]">
+                © 2024 G.D.M. Guardiã dos Montes <br class="sm:hidden"> Todos os direitos reservados.
             </p>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
